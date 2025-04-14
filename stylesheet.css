@@ -1,0 +1,247 @@
+/* Réinitialisation des styles par défaut */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Style général */
+body {
+    font-family: 'Poppins', sans-serif; /* Police moderne */
+    line-height: 1.6;
+    color: #333; /* Couleur de texte principale */
+}
+
+/* Barre de navigation */
+.navbar {
+    position: fixed; /* Fixe la barre en haut */
+    top: 0;
+    width: 100%;
+    background-color: brown; /* Couleur sombre élégante */
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Ombre légère */
+    z-index: 1000; /* Assure que la barre reste au-dessus */
+}
+
+.navbar .logo {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 30px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 400;
+    transition: color 0.3s ease; /* Animation de transition */
+}
+
+.nav-links a:hover {
+    color: #3498db; /* Couleur au survol */
+}
+
+/* Section d'accueil (Hero) 100vh */
+.hero {
+    height: 100vh; /* Hauteur pleine écran */
+    background: linear-gradient(to right, #3498db, #2ec); /* Dégradé de couleur */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 0 20px;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #2c3e50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #34495e;
+}
+
+/* Style des sections #2c3e50*/
+.section {
+    padding: 80px 50px;
+    text-align: center;
+}
+
+.section h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #2c3e50;
+}
+
+/* Section À propos */
+.apropos-content {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 18px;
+    color: #666;
+}
+
+.apropos-content p {
+    margin-bottom: 20px;
+}
+
+/* Section Projets */
+.projets-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); /* Grille responsive */
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.projet-card {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease; /* Animation au survol */
+}
+
+.projet-card:hover {
+    transform: translateY(-10px); /* Effet de levée au survol */
+}
+
+.projet-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover; /* Ajuste l'image sans déformation */
+}
+
+.projet-info {
+    padding: 20px;
+}
+
+.projet-info h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #2c3e50;
+}
+
+.projet-info p {
+    color: #666;
+    margin-bottom: 15px;
+}
+
+/* Section Contact  #f9f9f9  #3498db*/
+.contact {
+    background-color:brown;
+}
+
+.contact a {
+    color: brown;
+    text-decoration: none;
+}
+
+.contact a:hover {
+    text-decoration: underline;
+}
+/* contact 1 */
+
+body{
+	width:100%;
+	height:100%;
+	font-family: 'Roboto Condensed', sans-serif;
+	
+}
+
+
+h1,h2,h3 {
+	margin:0 0 35px 0;
+	font-family: 'Patua One', cursive;
+	text-transform: uppercase;
+	letter-spacing:1px;
+}
+
+p{
+	margin:0 0 25px;
+	font-size:18px;
+	line-height:1.6em;
+}
+a{
+	color:#26a5d3;
+}
+a:hover,a:focus{
+	text-decoration:none;
+	color:#26a5d3;
+}
+
+#contact{
+	background:#333333;
+	color:#f4f4f4;
+	padding-bottom:80px;
+    text-align: center;
+}
+
+textarea.form-control{
+    height:100px;
+}
+/* imge text */
+
+/* Conteneur pour l'image et le texte */
+.image-container {
+            position: relative; /* Nécessaire pour positionner le texte */
+            width: 300px; /* Largeur de l'image */
+}
+
+        /* Style de l'image */
+.image-container img {
+width: 100%; /* L'image prend toute la largeur du conteneur */
+opacity: 0.8; /* Transparence de l'image */
+}
+
+        /* Style du texte superposé */
+.image-container .text-overlay {
+            position: absolute; /* Positionnement par rapport au conteneur parent */
+            top: 50%; /* Centrage vertical */
+            left: 50%; /* Centrage horizontal */
+            transform: translate(-50%, -50%); /* Ajustement pour centrer parfaitement */
+            color: white; /* Couleur du texte */
+            font-size: 20px; /* Taille du texte */
+            font-weight: bold; /* Texte en gras */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Ombre pour rendre le texte plus lisible */
+}
+
+
+
+
+
+/* Pied de page */
+footer {
+    background-color: brown;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+}
